@@ -1,0 +1,59 @@
+{
+  "_from": "todomvc-app-css",
+  "_id": "todomvc-app-css@2.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-0xIt5DAZhQ+qzeu9DBEWk5J7mnDVGJaFofNLK67E31HbqqIGPWsZNBZ0+uFzvQLDqKCteETAQ8oIFzz+jZHiAg==",
+  "_location": "/todomvc-app-css",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "todomvc-app-css",
+    "name": "todomvc-app-css",
+    "escapedName": "todomvc-app-css",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/todomvc-app-css/-/todomvc-app-css-2.4.0.tgz",
+  "_shasum": "9aa17f0e566163864e146e29bb593feaec67d9fb",
+  "_spec": "todomvc-app-css",
+  "_where": "/Users/jaden/Documents/ToDo",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tastejs/todomvc-app-css/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "CSS for TodoMVC apps",
+  "files": [
+    "index.css"
+  ],
+  "homepage": "https://github.com/tastejs/todomvc-app-css#readme",
+  "keywords": [
+    "todomvc",
+    "tastejs",
+    "app",
+    "todo",
+    "template",
+    "css",
+    "style",
+    "stylesheet"
+  ],
+  "license": "CC-BY-4.0",
+  "name": "todomvc-app-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tastejs/todomvc-app-css.git"
+  },
+  "style": "index.css",
+  "version": "2.4.0"
+}

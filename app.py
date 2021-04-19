@@ -27,24 +27,24 @@ def index():
 
 # creating an endpoint and a method for  todoitem using the method POST 
 
-@app.route("/add-item", methods=["POST"])
-def create():
+@app.route("/add-todo", methods=["POST"])
+def addTodo():
     data = json.loads(request.data)  # this loads a json data from request 
     pusher.trigger("todo", "item-added", data) # this adds to-do item to the list 
     return jsonify(data)
 
 
 # creating an endpoint to remove a method for todo item 
-@app.route("/remove/<item_id>", methods=["DELETE"])
-def delete(item_id):
+@app.route("/remove-todo/<item_id>", methods=["DELETE"])
+def removeTodo(item_id):
     data = {"id" : item_id}
     pusher.trigger("todo", "item_removed", data )
     return jsonify(data)
 
 
 # creating an endpoint to update an added item 
-@app.route("/update/<item_id>", methods=["POST"])
-def update(item_id):
+@app.route("/update-todo/<item_id>", methods=["POST"])
+def updateTodo(item_id):
     data = {
         "id" : item_id, 
         "completed" : json.loads(request.data).get("completed", 0)
@@ -55,4 +55,4 @@ def update(item_id):
       
 
  # run Flask app in debug mode
-    app.run(debug=True)
+app.run(debug=True)
